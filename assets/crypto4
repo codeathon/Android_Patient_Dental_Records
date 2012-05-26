@@ -1,0 +1,8 @@
+BEGIN TRANSACTION;
+CREATE TABLE android_metadata (locale TEXT);
+INSERT INTO android_metadata VALUES('en_US');
+CREATE TABLE login (uname TEXT, pswd TEXT);
+INSERT INTO login VALUES('rohitain','rohitain');
+CREATE TABLE person (uname TEXT, fname TEXT, lname TEXT, sex TEXT, dob TEXT, age NUMERIC, address TEXT, cellno NUMERIC, mstatus TEXT);
+INSERT INTO person VALUES('rohitain','Rohit','Ainapure','M','04/10/2012',25,'12 Englewood Avenue',8888888888,'Single');
+COMMIT;

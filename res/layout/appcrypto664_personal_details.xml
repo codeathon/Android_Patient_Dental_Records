@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tooth" >
+
+    <EditText
+        style="@style/pdtext"
+        android:id="@+id/pd_cellno"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="26dp"
+        android:inputType="phone"
+        android:text="716-866-0215" />
+
+    <TextView
+        style="@style/pdlabel"
+        android:id="@+id/textView8"
+        android:layout_alignBottom="@+id/pd_cellno"
+        android:text="Cell no." />
+
+    <EditText
+        style="@style/pdtext"
+        android:id="@+id/pd_address"
+        android:layout_above="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:inputType="textPostalAddress"
+        android:text="12 Englewood Avenue, Buffalo NY - 14214" />
+
+    <TextView
+        style="@style/pdlabel"
+        android:id="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/pd_address"
+        android:text="Address" />
+
+    <EditText
+        style="@style/pdtext"
+        android:id="@+id/pd_mstatus"
+        android:layout_above="@+id/pd_address"
+        android:layout_alignLeft="@+id/pd_address"
+        android:layout_marginBottom="25dp"
+        android:text="Single" />
+
+    <TextView
+        style="@style/pdlabel"
+        android:id="@+id/textView6"
+        android:layout_alignBottom="@+id/pd_mstatus"
+        android:layout_alignParentLeft="true"
+        android:text="Marital Status"/>
+
+    <EditText
+        style="@style/pdtext"
+        android:id="@+id/pd_age"
+        android:layout_above="@+id/textView6"
+        android:layout_alignLeft="@+id/pd_mstatus"
+        android:layout_marginBottom="42dp"
+        android:inputType="number"
+        android:text="25" />
+
+    <TextView
+        style="@style/pdlabel"
+        android:id="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/pd_age"
+        android:text="Age"/>
+
+    <EditText
+        style="@style/pdtext"
+        android:id="@+id/pd_dob"
+        android:layout_above="@+id/pd_age"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="34dp"
+        android:inputType="date"
+        android:text="04/10/1987"/>
+
+    <TextView
+        style="@style/pdlabel"
+        android:id="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/pd_dob"
+        android:text="Date Of Birth"/>
+
+    <TextView
+        style="@style/pdlabel"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/textView4"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_marginBottom="22dp"
+        android:text="Sex"/>
+
+    <EditText
+        style="@style/pdtext"
+        android:id="@+id/pd_sex"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/pd_lname"
+        android:text="M" />
+
+    <EditText
+        style="@style/pdtext"
+        android:id="@+id/pd_lname"
+        android:layout_above="@+id/pd_sex"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:text="Ainapure" />
+
+
+    <TextView
+        style="@style/pdlabel"
+        android:id="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/pd_lname"
+        android:text="Last Name"/>
+
+
+    <TextView
+        android:id="@+id/pd_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#000066"
+        android:text="Sign Out"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        style="@style/pdlabel"
+        android:id="@+id/textView1"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="21dp"
+        android:text="First Name"/>
+
+    <EditText
+        style="@style/pdtext"
+        android:id="@+id/pd_firstname"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView1"
+        android:text="Rohit" />
+
+    <Button
+        android:id="@+id/pd_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="Home" />
+
+    <TextView
+        android:id="@+id/pd_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#000066"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
